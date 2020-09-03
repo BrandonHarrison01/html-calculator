@@ -4,6 +4,7 @@ body {
 }
 
 .calculator {
+    margin-top: 200px;
     border: 2px solid black;
     border-radius: 5px;
 }
@@ -20,6 +21,19 @@ ul {
 
 .screen {
     font-size: 1.8rem;
+}
+
+.numbers {
+    padding: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 50px);
+    gap: 15px;
+}
+
+.clear, .zero {
+    grid-column: 1 / span 2;
 }
 
 p {
